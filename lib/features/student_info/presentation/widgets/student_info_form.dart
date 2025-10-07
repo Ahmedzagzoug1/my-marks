@@ -36,10 +36,7 @@ class _StudentInfoFormState extends State<StudentInfoForm> {
       return;
     }
 
-    // هنا ممكن ترسل البيانات للـ Firebase أو السيرفر
-    print("College: $selectedCollege");
-    print("Department: $selectedDepartment");
-    print("Student ID: ${studentIdController.text}");
+
 
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text("تم حفظ البيانات بنجاح ✅")),

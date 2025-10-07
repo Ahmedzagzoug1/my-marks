@@ -13,7 +13,6 @@ class HomePage extends StatelessWidget {
     if (await canLaunchUrl(url)) {
       await launchUrl(url, mode: LaunchMode.externalApplication);
     } else {
-      print('هناك مشكلة فى فتح الرابط');
     }
   }
 

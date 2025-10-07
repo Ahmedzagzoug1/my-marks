@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_marks/core/consts/colors/colors.dart' show AppColor;
 import 'package:my_marks/core/consts/strings/strings.dart';
 import 'package:my_marks/core/routes/routes.dart';
 import 'package:my_marks/features/auth/presentation/widgets/custom_text_form_field.dart';
@@ -60,11 +59,7 @@ obscureText: true,),
                     child: ElevatedButton(
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
-                          // final email = _emailController.text.trim();
-                          // final password = _passwordController.text.trim();
 
-                          print("EMAIL: ${_emailController.text.trim()}");
-                          print("PASSWORD: ${_passwordController.text.trim()}");
 
 Navigator.pushNamedAndRemoveUntil(context, Routes.studentIfoRoute,(route) {
   return false;
